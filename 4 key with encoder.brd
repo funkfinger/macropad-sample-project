@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="9.525" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="1.190625" altunitdist="mm" altunit="mm"/>
@@ -190,11 +190,19 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="98.0875" y2="0" width="0" layer="20"/>
-<wire x1="98.0875" y1="0" x2="98.0875" y2="42.85" width="0" layer="20"/>
-<wire x1="98.0875" y1="42.85" x2="0" y2="42.85" width="0" layer="20"/>
-<wire x1="0" y1="42.85" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="0" y1="24.85" x2="0" y2="18" width="0" layer="20"/>
+<wire x1="0" y1="18" x2="18" y2="0" width="0" layer="20" curve="90"/>
+<wire x1="18" y1="0" x2="100.23125" y2="0" width="0" layer="20"/>
+<wire x1="100.23125" y1="0" x2="105.23125" y2="5" width="0" layer="20" curve="90"/>
+<wire x1="105.23125" y1="5" x2="105.23125" y2="37.85" width="0" layer="20"/>
+<wire x1="105.23125" y1="37.85" x2="100.23125" y2="42.85" width="0" layer="20" curve="90"/>
+<wire x1="100.23125" y1="42.85" x2="18" y2="42.85" width="0" layer="20"/>
+<wire x1="18" y1="42.85" x2="0" y2="24.85" width="0" layer="20" curve="90"/>
 <circle x="19.05" y="21.43125" radius="21.298546875" width="0.1524" layer="51"/>
+<circle x="8.334375" y="34.528125" radius="3" width="0.1" layer="20"/>
+<circle x="8.334375" y="8.334375" radius="3" width="0.1" layer="20"/>
+<circle x="100.0125" y="38.1" radius="3" width="0.1" layer="20"/>
+<circle x="100.0125" y="4.7625" radius="3" width="0.1" layer="20"/>
 </plain>
 <libraries>
 <library name="keeb-library">
@@ -1138,12 +1146,13 @@ Please make sure your boards conform to these design rules.
 <contactref element="LED8" pad="2-DOUT"/>
 <contactref element="LED9" pad="4-DIN"/>
 <wire x1="6.5" y1="19" x2="5.5" y2="19" width="0.1524" layer="16"/>
-<wire x1="10" y1="22.5" x2="6.5" y2="19" width="0.1524" layer="1"/>
-<wire x1="10" y1="31" x2="10" y2="22.5" width="0.1524" layer="1"/>
-<wire x1="17" y1="38" x2="10" y2="31" width="0.1524" layer="16"/>
-<wire x1="18" y1="38" x2="17" y2="38" width="0.1524" layer="16"/>
+<wire x1="8.809375" y1="21.309375" x2="6.5" y2="19" width="0.1524" layer="1"/>
+<wire x1="10" y1="31" x2="8.809375" y2="29.809375" width="0.1524" layer="1"/>
+<wire x1="8.809375" y1="29.809375" x2="8.809375" y2="21.309375" width="0.1524" layer="1"/>
+<wire x1="18.3" y1="38.36875" x2="18.3" y2="36.91875" width="0.1524" layer="16"/>
+<wire x1="18.3" y1="36.91875" x2="12.38125" y2="31" width="0.1524" layer="16"/>
+<wire x1="12.38125" y1="31" x2="10" y2="31" width="0.1524" layer="16"/>
 <wire x1="5.5" y1="19" x2="5.5125" y2="18.78125" width="0.1524" layer="16"/>
-<wire x1="18" y1="38" x2="18.3" y2="38.36875" width="0.1524" layer="16"/>
 <via x="6.5" y="19" extent="1-16" drill="0.35"/>
 <via x="10" y="31" extent="1-16" drill="0.35"/>
 </signal>
